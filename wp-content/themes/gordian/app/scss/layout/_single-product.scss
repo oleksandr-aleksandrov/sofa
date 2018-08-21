@@ -1,0 +1,43 @@
+.single-product-title {
+    font-size: 32px;
+}
+
+.single-product-item-price {
+    font-size: 30px;
+    color: $link-color;
+}
+
+.shop-navigation {
+    font-size: 16px;
+}
+
+.nav-next {
+    position: relative;
+    &:before {
+        content: '|';
+        color: #b1b1b1;
+        position: relative;
+        left: -6px;
+        font-size: 15px;
+    }
+    &:after {
+        content: '>>';
+        color: $link-color;
+        position: relative;
+        font-weight: 600;
+    }
+}
+
+.nav-previous {
+    position: relative;
+    &:before {
+        content: '<<';
+        color: $link-color;
+        position: relative;
+        font-weight: 600;
+        left: -3px;
+        font-size: 15px;
+
+    }
+
+}

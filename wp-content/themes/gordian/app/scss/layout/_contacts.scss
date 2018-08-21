@@ -1,0 +1,37 @@
+/* contact */
+.entry-title {
+    font-size: 26px;
+}
+
+.page-title-default {
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 1px;
+        background-color: #c2964e;
+        @include center_transform;
+        top: 70%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}

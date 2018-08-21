@@ -1,0 +1,11 @@
+{
+  "name": "gk",
+  "type": "project",
+  "autoload": {
+    "psr-4": {"GK\\": "src/"}
+  },
+  "require": {
+    "php": "~7.0.8",
+    "paquettg/php-html-parser": ">=1.6"
+  }
+}

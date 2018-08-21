@@ -1,0 +1,35 @@
+@import '../utils/_mixins';
+@import '../utils/_variables';
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: $base-font-family;
+    background-color: $base-bg;
+    height: 100%;
+    line-height: 27px;
+    position: relative;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #808080;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+a {
+    color: $link-color;
+    @include transition($default-transition);
+    &:hover {
+        text-decoration: none;
+        color: #c2964e;
+    }
+}
