@@ -1,3 +1,6 @@
 Aug 17 2018 16:08:25
 {"type":2,"message":"RecursiveDirectoryIterator::__construct(\/var\/www\/devsofa\/wp-content\/themes\/gordian\/app\/scss\/base): failed to open dir: Permission denied","file":"\/var\/www\/devsofa\/wp-content\/plugins\/all-in-one-wp-migration\/lib\/vendor\/servmask\/iterator\/class-ai1wm-recursive-directory-iterator.php","line":31}
 
+Aug 22 2018 00:38:23
+{"type":2,"message":"RecursiveDirectoryIterator::__construct(\/var\/www\/devsofa\/wp-content\/themes\/gordian\/app\/scss\/base): failed to open dir: Permission denied","file":"\/var\/www\/devsofa\/wp-content\/plugins\/all-in-one-wp-migration\/lib\/vendor\/servmask\/iterator\/class-ai1wm-recursive-directory-iterator.php","line":31}
+

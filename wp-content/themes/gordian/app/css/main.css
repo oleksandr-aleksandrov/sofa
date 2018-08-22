@@ -22,7 +22,7 @@ main { -webkit-box-flex: 1; -webkit-flex: 1 0 auto; -ms-flex: 1 0 auto; flex: 1 
 
 a { color: #c2964e; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 
-a:hover { text-decoration: none; color: #c2964e; }
+a:hover { text-decoration: none; color: #c2964e; opacity: .7; }
 
 /*! fancyBox v2.1.3 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp { padding: 0; margin: 0; border: 0; outline: none; vertical-align: top; }
@@ -254,5 +254,7 @@ blockquote.right { margin-left: 20px; text-align: left; margin-right: 0; width: 
 .page-title-default { position: relative; }
 
 .page-title-default:after { content: ''; position: absolute; width: 30%; height: 1px; background-color: #c2964e; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); top: 70%; }
+
+.button-read-more { font-size: 17px; }
 
 /*# sourceMappingURL=main.css.map */

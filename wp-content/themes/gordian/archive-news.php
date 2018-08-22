@@ -8,24 +8,27 @@
  */
 
 get_header();
-$categories = get_the_terms($post->ID, 'shop-category');
+$categories = get_the_terms($post->ID, 'news-category');
 ?>
 
 
     <div class="container py-7">
         <div class="row">
             <?php if (have_posts()) : ?>
-                <h1 class="col-md-12 entry-title mb-5 page-title-default text-center">
-                    <?php foreach ($categories as $category) {
-                        echo $category->name;
-                    } ?>
-                </h1>
+<!--                <h1 class="col-md-12 entry-title mb-5 page-title-default text-center">-->
+<!--                    --><?php //foreach ($categories as $category) {
+//
+//                        echo isset($category->cat_name) ? $category->cat_name : '';
+//
+//                    } ?>
+<!--                </h1>-->
 
                 <?php
                 /* Start the Loop */
                 while (have_posts()) :
                     the_post();
-                    echo render_template_part('content-shop');
+
+                    echo render_template_part('content-news');
 
                 endwhile;
 

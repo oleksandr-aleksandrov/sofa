@@ -42,6 +42,7 @@ if (!function_exists('gordian_setup')) :
          * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
          */
         add_theme_support('post-thumbnails');
+        add_image_size('single_news_image', 900, 900);
         add_image_size('single_product_image_zoom', 1300, 1300);
         add_image_size('archive_product_image', 600, 700, true);
         add_image_size('header_logo', 100, 100);
@@ -369,5 +370,4 @@ class dropdown_walker_nav_menu extends Walker_Nav_menu
         $output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);
     }
 }
-
 
