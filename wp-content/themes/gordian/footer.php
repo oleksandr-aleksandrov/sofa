@@ -47,7 +47,7 @@
         <div class="col-md-8 mx-auto d-flex flex-row aling-center justify-content-between align-items-center">
             <p class="footer-copyright pt-3 pb-4 m-0">© <?php echo date("Y"); ?> Grodian Knot</p>
             <p class="footer-search m-0 pt-3 pb-4">
-                <a href="/  ?s=*">
+                <a href="<?php echo get_search_link(); ?>*">
                     <span class="oi oi-magnifying-glass"></span>
                     SEARCH</a>
             </p>

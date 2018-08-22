@@ -371,3 +371,26 @@ class dropdown_walker_nav_menu extends Walker_Nav_menu
     }
 }
 
+
+function true_rewrite_search_results_permalink() {
+	global $wp_rewrite;
+
+	if ( !isset( $wp_rewrite ) || !is_object( $wp_rewrite ) || !$wp_rewrite->using_permalinks() )
+		return;
+	if ( is_search() && !is_admin() && strpos( $_SERVER['REQUEST_URI'], "/search/") === false && ! empty( $_GET['s'] ) ) {
+		wp_redirect( site_url() . "/search/" . urlencode( get_query_var( 's' ) ) );
+		exit;
+	}	
+}
+ 
+add_action( 'template_redirect', 'true_rewrite_search_results_permalink' );
+ 
+
+function true_urldecode_s($query) {
+	if (is_search()) {
+		$query->query_vars['s'] = urldecode( $query->query_vars['s'] );
+	}
+	return $query;
+}
+ 
+add_filter('parse_query', 'true_urldecode_s');
